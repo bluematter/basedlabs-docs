@@ -42,6 +42,15 @@ export const navigation = [
       { title: 'BasedLabs.createImage()', href: '/docs/basedlabs-createImage' },
     ],
   },
+  {
+    title: 'Examples',
+    links: [
+      {
+        title: 'Build a Telegram Bot',
+        href: 'https://github.com/bluematter/basedlabs-docs/tree/main/examples/telegram',
+      },
+    ],
+  },
   // {
   //   title: 'Contributing',
   //   links: [
