@@ -1,0 +1,20 @@
+{
+  "name": "telegram",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node dist/index.js",
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "basedlabs": "^1.0.2",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.64.2",
+    "dotenv": "^16.3.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.3.3"
+  }
+}

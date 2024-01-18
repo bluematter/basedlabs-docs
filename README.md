@@ -1,1 +1,1 @@
-# basedlabs-docs
+Basedlabs Docs
