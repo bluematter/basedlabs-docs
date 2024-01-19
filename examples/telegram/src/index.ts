@@ -47,11 +47,11 @@ async function initializeBot() {
         }
 
         const createResponse = await basedlabs.createImage({
-          prompt: `In the style of TOK (${customPrompt}) wearing jeans, masterpiece, best quality, high detail, sharp focus, soft lighting, high quality,(photorealistic:1.4), 8K, (masterpiece*high detailed*highres), 8k, cinematic quality, in the style of jeans on everything`,
+          prompt: `${customPrompt}, cinematic, ultra detailed, 8K, <lora:ral-jeans-sdxl:1> ral-jeans`,
           modelId:
-            'ba6dc00f757ac2833db3466d8e3b4a74671207ff16044663758e86826002260b',
+            'ac8f3442feb931a2658a8c7c58dbadba8947dc58a5ccb81be26473de2f109aaa',
           negativePrompt:
-            '(worst quality:2), (multiple people), (low quality:2),(blurry:2),bad_prompt,text, (bad and mutated hands:1.3),(bad hands),badhandv4,mutated hands, bad anatomy, missing fingers,extra fingers,fused fingers,too many fingers,(interlocked fingers:1.2), extra limbs,malformed limbs,multiple limbs, extra arms, extra legs, long neck, cross-eyed, negative_hand, negative_hand-neg, text, label, caption',
+            '(worst quality, low quality, normal quality, lowres, low details, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, bad photography, bad art:1.4), (watermark, signature, text font, username, error, logo, words, letters, digits, autograph, trademark, name:1.2), (blur, blurry, grainy), morbid, ugly, asymmetrical, mutated malformed, mutilated, poorly lit, bad shadow, draft, cropped, out of frame, cut off, censored, jpeg artifacts, out of focus, glitch, duplicate, (airbrushed, cartoon, anime, semi-realistic, cgi, render, blender, digital art, manga, amateur:1.3), (3D ,3D Game, 3D Game Scene, 3D Character:1.1), (bad hands, bad anatomy, bad body, bad face, bad teeth, bad arms, bad legs, deformities:1.3)',
         })
 
         await bot.sendMessage(
